@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  background-color: #212121;
+}
+.navbar {
+  color: white;
+  margin-top: 10px;
+}
+.navbarBtn {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 1rem;
+}
+#colorContainer {
+  display: grid;
+  grid-template-columns: repeat(6, 20rem);
+  grid-template-rows: repeat(4, 12rem);
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.colorBox {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+}
+.hexValue {
+  margin-top: 100px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2px;
+  border-radius: 5px;
+}
+button {
+  margin-top: 100px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  background: black;
+  color: white;
+  border-radius: 5px;
+}
+@media (max-width: 1920px) {
+  #colorContainer {
+    grid-template-columns: repeat(6, 15rem);
+    grid-template-rows: repeat(4, 10rem);
+  }
+}
+@media (max-width: 1440px) {
+  #colorContainer {
+    grid-template-columns: repeat(6, 12rem);
+    grid-template-rows: repeat(4, 10rem);
+  }
+}
+@media (max-width: 1024px) {
+  #colorContainer {
+    grid-template-columns: repeat(6, 10rem);
+    grid-template-rows: repeat(4, 8rem);
+  }
+  .container {
+    gap: 0.5rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 768px) {
+  #colorContainer {
+    grid-template-columns: repeat(4, 8rem);
+    grid-template-rows: repeat(6, 6rem);
+  }
+  .hexValue {
+    margin-top: 50px;
+  }
+  button {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 480px) {
+  #colorContainer {
+    grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: repeat(6, 7rem);
+  }
+  .hexValue {
+    margin-top: 60px;
+    font-size: 0.8rem;
+  }
+  button {
+    margin-top: 60px;
+    font-size: 0.6rem;
+  }
+}
